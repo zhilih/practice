@@ -18,6 +18,7 @@ public class ArrayBlockingQueue {
 
 	public Object take() throws InterruptedException {
 		Object object = queue.poll();
+		notEmpty.notifyAll();
 		return object;
 	}
 
