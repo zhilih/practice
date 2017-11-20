@@ -1,4 +1,4 @@
-package cn.hoover.practice.tcpip.socket;
+package cn.hoover.practice.tcpip.tcpSocket;
 
 import java.io.BufferedReader;
 import java.io.IOException;

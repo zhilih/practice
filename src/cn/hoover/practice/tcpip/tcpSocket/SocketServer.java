@@ -1,10 +1,11 @@
-package cn.hoover.practice.tcpip.socket;
+package cn.hoover.practice.tcpip.tcpSocket;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.io.PrintWriter;
 import java.net.ServerSocket;
 import java.net.Socket;
+import java.net.SocketAddress;
 
 public class SocketServer {
 
@@ -36,6 +37,9 @@ public class SocketServer {
 				System.out.println("Error." + e);
 				// 出错，打印出错信息
 			}
+			
+			SocketAddress address = socket.getRemoteSocketAddress();
+			System.out.println("Client at " + address);
 			// 3、获取输入流，并读取客户端信息
 			String line;
 			BufferedReader in = new BufferedReader(new InputStreamReader(socket.getInputStream()));
