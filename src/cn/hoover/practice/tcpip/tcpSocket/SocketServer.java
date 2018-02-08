@@ -9,6 +9,7 @@ import java.net.SocketAddress;
 
 public class SocketServer {
 
+//	https://www.cnblogs.com/feijian/p/4461087.html
 	public static void main(String[] args) {
 		SocketServer server = new SocketServer();
 		//1、a)创建一个服务器端Socket，即SocketService 
